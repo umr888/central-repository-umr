@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School Admission Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>School Admission Form</h1>
+      <p>Please complete all required fields to apply for admission.</p>
+    </header>
+
+    <form action="#" method="post">
+      <section class="form-section">
+        <h2>Student Details</h2>
+        <div class="grid">
+          <label>
+            Full Name
+            <input type="text" name="student_name" placeholder="Enter student full name" required>
+          </label>
+          <label>
+            Date of Birth
+            <input type="date" name="dob" required>
+          </label>
+          <label>
+            Gender
+            <select name="gender" required>
+              <option value="">Select gender</option>
+              <option value="female">Female</option>
+              <option value="male">Male</option>
+              <option value="other">Other</option>
+            </select>
+          </label>
+          <label>
+            Grade Applying For
+            <select name="grade" required>
+              <option value="">Choose grade</option>
+              <option value="nursery">Nursery</option>
+              <option value="k1">Kindergarten 1</option>
+              <option value="k2">Kindergarten 2</option>
+              <option value="grade1">Grade 1</option>
+              <option value="grade2">Grade 2</option>
+              <option value="grade3">Grade 3</option>
+              <option value="grade4">Grade 4</option>
+              <option value="grade5">Grade 5</option>
+            </select>
+          </label>
+        </div>
+      </section>
+
+      <section class="form-section">
+        <h2>Contact Information</h2>
+        <div class="grid">
+          <label>
+            Parent / Guardian Name
+            <input type="text" name="guardian_name" placeholder="Enter parent or guardian name" required>
+          </label>
+          <label>
+            Mobile Number
+            <input type="tel" name="phone" placeholder="e.g. +1234567890" required>
+          </label>
+          <label>
+            Email Address
+            <input type="email" name="email" placeholder="Enter email address" required>
+          </label>
+          <label>
+            Home Address
+            <textarea name="address" rows="3" placeholder="Enter full address" required></textarea>
+          </label>
+        </div>
+      </section>
+
+      <section class="form-section">
+        <h2>Academic Background</h2>
+        <div class="grid">
+          <label>
+            Previous School
+            <input type="text" name="previous_school" placeholder="Enter previous school name">
+          </label>
+          <label>
+            Last Grade Completed
+            <input type="text" name="last_grade" placeholder="e.g. Grade 5">
+          </label>
+          <label>
+            Academic Strengths
+            <textarea name="strengths" rows="3" placeholder="List subjects or skills" ></textarea>
+          </label>
+          <label>
+            Special Needs / Medical Information
+            <textarea name="medical_info" rows="3" placeholder="Optional details"></textarea>
+          </label>
+        </div>
+      </section>
+
+      <section class="form-section">
+        <h2>Additional Details</h2>
+        <div class="grid">
+          <label class="full-width">
+            Emergency Contact Name
+            <input type="text" name="emergency_contact" placeholder="Emergency contact name" required>
+          </label>
+          <label>
+            Emergency Phone
+            <input type="tel" name="emergency_phone" placeholder="e.g. +1234567890" required>
+          </label>
+          <label class="full-width">
+            Comments or Special Requests
+            <textarea name="comments" rows="4" placeholder="Any additional information"></textarea>
+          </label>
+        </div>
+      </section>
+
+      <div class="form-actions">
+        <button type="submit">Submit Application</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
